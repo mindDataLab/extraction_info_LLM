@@ -1,0 +1,14 @@
+# Python virtual environment
+venv/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS specific
+.DS_Store
+
+# Credentials and secrets
+credentials.json
+.streamlit/secrets.toml

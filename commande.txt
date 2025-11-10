@@ -1,0 +1,42 @@
+
+
+fonctionnalité (vérifier si une ligne existe avant de l'écrire)
+* Il s'agira "simplement" de remplacer la fonction `write_to_google_sheet` par une fonction `write_to_postgresql`.
+
+
+  Pour lancer votre nouvelle application :
+
+
+   1. Démarrez votre serveur LLM (via LM Studio).
+   2. Ouvrez votre terminal dans le dossier du projet (Documents/sprint_Ai).
+   3. Activez l'environnement virtuel :
+
+   1     source venv/bin/activate
+
+   4. Lancez l'application Streamlit avec la commande :
+
+   1     streamlit run app.py
+
+
+PENSEZ A DEMARRER LE LLM DANS LM STUDIO  ET L'APPLICATION STREAMLIT
+
+
+PENSEZ A DEMARRER PostgreSQL
+
+# 1. Démarrer PostgreSQL
+brew services start postgresql
+
+# 2. Se connecter
+psql postgres
+
+# 3. Dans psql, lister les BDD
+\l
+
+# 4. Se connecter à une BDD spécifique
+\c nom_de_votre_bdd
+
+# 5. Voir les tables de cette BDD
+\dt
+
+# 6. Quitter
+\q
