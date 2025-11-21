@@ -7,22 +7,42 @@ import bcrypt
 import psycopg2
 import psycopg2.extras
 import streamlit as st
+from dotenv import load_dotenv
+
+# Charger les variables d'environnement depuis le fichier .env
+load_dotenv()
 
 # --- Database Connection ---
 
 
-# Utilise les secrets de Streamlit pour les détails de connexion
 def get_db_connection():
-    """Établit une connexion à la base de données PostgreSQL."""
+    """Établit une connexion à la base de données PostgreSQL en utilisant les variables d'environnement."""
     try:
-        conn = psycopg2.connect(
-            host=st.secrets["postgres"]["host"],
-            dbname=st.secrets["postgres"]["dbname"],
-            user=st.secrets["postgres"]["user"],
-            password=st.secrets["postgres"]["password"],
-            port=st.secrets["postgres"]["port"],
-        )
-        return conn
+        # Essayer d'abord avec les variables d'environnement (.env)
+        if os.getenv("DB_HOST"):
+            conn = psycopg2.connect(
+                host=os.getenv("DB_HOST"),
+                dbname=os.getenv("DB_NAME", "postgres"),
+                user=os.getenv("DB_USER"),
+                password=os.getenv("DB_PASSWORD"),
+                port=os.getenv("DB_PORT", "5432"),
+            )
+            return conn
+        # Fallback sur les secrets Streamlit si .env n'existe pas
+        elif "postgres" in st.secrets:
+            conn = psycopg2.connect(
+                host=st.secrets["postgres"]["host"],
+                dbname=st.secrets["postgres"]["dbname"],
+                user=st.secrets["postgres"]["user"],
+                password=st.secrets["postgres"]["password"],
+                port=st.secrets["postgres"]["port"],
+            )
+            return conn
+        else:
+            st.error(
+                "Aucune configuration de base de données trouvée. Créez un fichier .env avec les variables DB_HOST, DB_USER, DB_PASSWORD, etc."
+            )
+            return None
     except Exception as e:
         st.error(f"Erreur de connexion à la base de données : {e}")
         return None
@@ -80,6 +100,17 @@ def init_db():
                 BEGIN
                     IF NOT EXISTS (SELECT 1 FROM information_schema.columns WHERE table_name='extractions' AND column_name='content_hash') THEN
                         ALTER TABLE extractions ADD COLUMN content_hash VARCHAR(64);
+                    END IF;
+                END
+                $$;
+            """)
+
+            # Ajout de la colonne source_url si elle n'existe pas
+            cur.execute("""
+                DO $$
+                BEGIN
+                    IF NOT EXISTS (SELECT 1 FROM information_schema.columns WHERE table_name='extractions' AND column_name='source_url') THEN
+                        ALTER TABLE extractions ADD COLUMN source_url TEXT;
                     END IF;
                 END
                 $$;
@@ -189,7 +220,9 @@ def calculate_content_hash(content):
     return hashlib.sha256(content.encode("utf-8")).hexdigest()
 
 
-def add_extraction(user_id, original_content, extracted_data, content_hash):
+def add_extraction(
+    user_id, original_content, extracted_data, content_hash, source_url=None
+):
     """Ajoute ou met à jour un enregistrement d'extraction dans la base de données."""
     conn = get_db_connection()
     if conn is None:
@@ -202,14 +235,15 @@ def add_extraction(user_id, original_content, extracted_data, content_hash):
 
             cur.execute(
                 """
-                INSERT INTO extractions (user_id, original_content, extracted_data, content_hash)
-                VALUES (%s, %s, %s::jsonb, %s)
+                INSERT INTO extractions (user_id, original_content, extracted_data, content_hash, source_url)
+                VALUES (%s, %s, %s::jsonb, %s, %s)
                 ON CONFLICT (user_id, content_hash) DO UPDATE SET
                     original_content = EXCLUDED.original_content,
                     extracted_data = EXCLUDED.extracted_data,
+                    source_url = EXCLUDED.source_url,
                     created_at = CURRENT_TIMESTAMP
             """,
-                (user_id, original_content, extracted_data, content_hash),
+                (user_id, original_content, extracted_data, content_hash, source_url),
             )
         conn.commit()
         return True, "Extraction ajoutée/mise à jour avec succès."
