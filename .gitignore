@@ -13,9 +13,16 @@ __pycache__/
 credentials.json
 .streamlit/secrets.toml
 
+# Streamlit Cloud
+# Note: .streamlit/config.toml doit être commité pour la configuration
+# Seul secrets.toml contient les credentials et ne doit pas être commité
+
 # Vercel
 .vercel
 VERCEL_ENV_VARIABLES.txt
+
+# Streamlit Cloud secrets
+STREAMLIT_SECRETS.txt
 
 # Deployment guides (contiennent des infos sensibles)
 SUPABASE_SETUP.md

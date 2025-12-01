@@ -1,16 +1,7 @@
 [server]
-# Configuration pour ngrok et accès externe
 headless = true
+port = 8501
 enableCORS = false
-enableXsrfProtection = false
 
 [browser]
-# Empêche l'ouverture automatique du navigateur
 gatherUsageStats = false
-
-[theme]
-primaryColor = "#7C3AED"
-backgroundColor = "#0E1117"
-secondaryBackgroundColor = "#262730"
-textColor = "#FAFAFA"
-font = "sans serif"

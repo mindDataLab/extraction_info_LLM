@@ -1,0 +1,2 @@
+# Packages système requis pour Streamlit Cloud
+# Ce fichier est utilisé pour installer des dépendances système via apt-get
