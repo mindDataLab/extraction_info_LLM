@@ -533,6 +533,8 @@ else:
                         st.session_state.wp_filter_categories = []
                     if "wp_filter_tags" not in st.session_state:
                         st.session_state.wp_filter_tags = []
+                    if "wp_filter_reset_counter" not in st.session_state:
+                        st.session_state.wp_filter_reset_counter = 0
 
                     # Filtres
                     with st.expander("🎛️ Filtres et recherche", expanded=True):
@@ -545,7 +547,7 @@ else:
                                 value=st.session_state.wp_filter_search,
                                 placeholder="Rechercher dans les articles...",
                                 label_visibility="collapsed",
-                                key="search_input",
+                                key=f"search_input_{st.session_state.wp_filter_reset_counter}",
                             )
                             st.session_state.wp_filter_search = search_term
 
@@ -555,7 +557,7 @@ else:
                                 5,
                                 50,
                                 st.session_state.wp_filter_per_page,
-                                key="per_page_slider",
+                                key=f"per_page_slider_{st.session_state.wp_filter_reset_counter}",
                             )
                             st.session_state.wp_filter_per_page = per_page
 
@@ -583,7 +585,7 @@ else:
                                     "🏷️ Catégories",
                                     options=list(cat_options.keys()),
                                     default=st.session_state.wp_filter_categories,
-                                    key="categories_select",
+                                    key=f"categories_select_{st.session_state.wp_filter_reset_counter}",
                                 )
                                 st.session_state.wp_filter_categories = selected_cats
                                 selected_cat_ids = [
@@ -607,7 +609,7 @@ else:
                                     "🔖 Tags",
                                     options=list(tag_options.keys()),
                                     default=st.session_state.wp_filter_tags,
-                                    key="tags_select",
+                                    key=f"tags_select_{st.session_state.wp_filter_reset_counter}",
                                 )
                                 st.session_state.wp_filter_tags = selected_tags
                                 selected_tag_ids = [
@@ -644,7 +646,7 @@ else:
                                     "Dernière année",
                                     "Personnalisé",
                                 ].index(st.session_state.wp_filter_date),
-                                key="date_filter_select",
+                                key=f"date_filter_select_{st.session_state.wp_filter_reset_counter}",
                                 label_visibility="collapsed",
                             )
                             st.session_state.wp_filter_date = date_filter
@@ -714,6 +716,7 @@ else:
                                 st.session_state.wp_filter_date = "Tous"
                                 st.session_state.wp_filter_categories = []
                                 st.session_state.wp_filter_tags = []
+                                st.session_state.wp_filter_reset_counter += 1
                                 st.rerun()
                         with col_btn3:
                             # Afficher le nombre de filtres actifs
