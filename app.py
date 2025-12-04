@@ -1091,27 +1091,27 @@ else:
                                 ]
 
                                 # Utiliser Streamlit Secrets en production, sinon le fichier local
-                                try:
-                                    if "gcp_service_account" in st.secrets:
-                                        # Utiliser les secrets Streamlit Cloud
-                                        creds = ServiceAccountCredentials.from_json_keyfile_dict(
-                                            st.secrets["gcp_service_account"], scope
+                                if "gcp_service_account" in st.secrets:
+                                    # Utiliser les secrets Streamlit Cloud
+                                    creds = ServiceAccountCredentials.from_json_keyfile_dict(
+                                        st.secrets["gcp_service_account"], scope
+                                    )
+                                else:
+                                    # En local, utiliser le fichier credentials.json
+                                    creds_file = os.path.join(
+                                        os.path.dirname(os.path.abspath(__file__)),
+                                        "credentials.json",
+                                    )
+                                    if not os.path.exists(creds_file):
+                                        st.error(
+                                            "Le fichier credentials.json est introuvable. Assurez-vous qu'il est dans le répertoire du projet ou configurez les secrets Streamlit."
                                         )
                                     else:
-                                        # En local, utiliser le fichier credentials.json
-                                        creds_file = os.path.join(
-                                            os.path.dirname(os.path.abspath(__file__)),
-                                            "credentials.json",
-                                        )
-                                        if not os.path.exists(creds_file):
-                                            st.error(
-                                                "Le fichier credentials.json est introuvable. Assurez-vous qu'il est dans le répertoire du projet ou configurez les secrets Streamlit."
-                                            )
-                                            raise FileNotFoundError("credentials.json not found")
                                         creds = ServiceAccountCredentials.from_json_keyfile_name(
                                             creds_file, scope
                                         )
 
+                                if "creds" in locals():
                                     client = gspread.authorize(creds)
 
                                     # Ouvrir la feuille
