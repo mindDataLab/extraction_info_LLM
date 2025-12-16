@@ -14,7 +14,7 @@
       "description": "Extraction de levées de fonds pour les start-ups de la fintech",
       "file": "levee_fonds_fintech.txt",
       "icon": "💰"
-    }
+    },
     {
       "id": "levee_fonds_health_sources_tierces",
       "name": "Levées de fonds e-santé - Sources tierces",
