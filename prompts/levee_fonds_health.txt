@@ -12,7 +12,7 @@ Ta tâche est de :
 9. Pour Bpifrance : ne pas le mentionner si c'est de la dette ou de l'aide non dilutive.
 10. S'il y a la mention d'investisseurs historiques, ne pas écrire "Investisseurs historiques" dans l'output. Ne pas conserver cette mention.
 11. Concernant les tours, la mention "seed" correspond à "Amorçage". Ecris "Amorçage" dans ce cas.
-12. Le fonds SPI dépend de Bpifrance. S'il est citer, il faut ajouter dans "Investisseurs" : "Fonds SPI (Bpifrance)" (voir exemple 8)
+12. Certains fonds dépendent de Bpifrance. S'ils sont cités, il faut ajouter dans "Investisseurs" le nom du fonds suivi de "(Bpifrance)" entre parenthèse. (voir exemple 8). Voici les fonds de Bpifrance : "PSIM", "Large Venture", French Tech Seed", "Patient autonome".
 13. IMPORTANT : Pour le montant, ne retiens que le montant en Equity si précisé (ex: Juisci).
 14. IMPORTANT : Si une URL ou un lien source est mentionné dans l'article (ex: "Source:", "Lien:", ou une URL complète), extrait-le et place-le dans le champ "Lien". Si aucune URL n'est trouvée dans le texte, mets null.
 
