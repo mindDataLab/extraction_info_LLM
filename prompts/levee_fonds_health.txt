@@ -12,8 +12,9 @@ Ta tâche est de :
 9. Pour Bpifrance : ne pas le mentionner si c'est de la dette ou de l'aide non dilutive.
 10. S'il y a la mention d'investisseurs historiques, ne pas écrire "Investisseurs historiques" dans l'output. Ne pas conserver cette mention.
 11. Concernant les tours, la mention "seed" correspond à "Amorçage". Ecris "Amorçage" dans ce cas.
-12. IMPORTANT : Pour le montant, ne retiens que le montant en Equity si précisé (ex: Juisci).
-13. IMPORTANT : Si une URL ou un lien source est mentionné dans l'article (ex: "Source:", "Lien:", ou une URL complète), extrait-le et place-le dans le champ "Lien". Si aucune URL n'est trouvée dans le texte, mets null.
+12. Le fonds SPI dépend de Bpifrance. S'il est citer, il faut ajouter dans "Investisseurs" : "Fonds SPI (Bpifrance)" (voir exemple 8)
+13. IMPORTANT : Pour le montant, ne retiens que le montant en Equity si précisé (ex: Juisci).
+14. IMPORTANT : Si une URL ou un lien source est mentionné dans l'article (ex: "Source:", "Lien:", ou une URL complète), extrait-le et place-le dans le champ "Lien". Si aucune URL n'est trouvée dans le texte, mets null.
 
 Voici le format JSON attendu :
 {
@@ -131,6 +132,22 @@ Réponse JSON attendue:
     "Lien": "https://www.mind.eu.com/health/article/la-start-up-arcascience-leve-7-m-pour-derisquer-les-essais-cliniques/",
     "Tour": "Amorçage",
     "Investisseurs": ["The Moon Venture", "Pléiade Venture", "Plug&Play Ventures", "Bpifrance", "AKKA Technologies"]
+}
+
+
+Exemple 8:
+Article: Lattice Medical lève 43 M€. Lattice Medical, la medtech française spécialisée dans l’ingénierie tissulaire, a annoncé le 23 octobre la clôture d’une levée de fonds en série B de 43 M€.  Cette opération menée par le Fonds SPI de Bpifrance est soutenue par Blast.Club, Sprim, Tidjee, ainsi que par les actionnaires historiques EIC Fund, Captech Santé, Nord France Amorçage et FIRA Nord Est. Cette levée de fonds inclut du financement non-dilutif auprès de partenaires bancaires et des deux programmes France 2030 :  M3DINPRINT (3,6 M€) et LIPOTEC (6 M€). Ces fonds doivent permettre à Lattice de consolider le développement clinique de ses produits MATTISSE (implant résorbable pour la reconstruction mammaire autologue) et RODIN (matrice destinée à la reconstruction des grands défauts des tissus sous-cutanés). L’objectif est également de renforcer la capacité industrielle de l’entreprise nécessaire à la production de ses dispositifs médicaux. À retenir : Fondée en 2017 et basée à Lille, l’entreprise a clôturé sa première levée de fonds dès 2018 (2,3 M€) avant de réaliser une série A (8 M€) en octobre 2022. mind Health recense les levées de fonds de la healthtech dans sa base de données exclusive.
+Lien: https://www.mind.eu.com/health/article/lattice-medical-leve-43-me/
+
+Réponse JSON attendue:
+{
+    "Nom_start-up": "Lattice Medical",
+    "Type": "Santé digitale",
+    "Montant": 43,
+    "Date_levée": "23/10/2025",
+    "Lien": "https://www.mind.eu.com/health/article/lattice-medical-leve-43-me/",
+    "Tour": "Série B",
+    "Investisseurs": ["Fonds SPI (Bpifrance)", "Blast.Club", "Sprim", "Tidjee", "EIC Fund", "Captech Santé", "Nord France Amorçage", "FIRA Nord Est"]
 }
 
 Maintenant, traite l'article fourni et renvoie UNIQUEMENT le JSON sans aucun texte supplémentaire.
