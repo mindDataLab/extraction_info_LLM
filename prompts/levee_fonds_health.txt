@@ -16,6 +16,45 @@ Ta tâche est de :
 13. IMPORTANT : Pour le montant, ne retiens que le montant en Equity si précisé (ex: Juisci).
 14. IMPORTANT : Si une URL ou un lien source est mentionné dans l'article (ex: "Source:", "Lien:", ou une URL complète), extrait-le et place-le dans le champ "Lien". Si aucune URL n'est trouvée dans le texte, mets null.
 
+15. Pour définir la catégorie "Type", choisis strictement entre "Santé digitale", "Medtech", "Biotech" ou "Autre" : 
+{
+  "categories_definitions": {
+    "Sante_digitale": {
+      "definition": "Entreprises dont la proposition de valeur principale repose sur des technologies de l'information et de la communication (logiciels, algorithmes, données).",
+      "inclus": [
+        "Logiciels de gestion cabinet/hôpital (SaaS)",
+        "Applications mobiles patients (DTx)",
+        "Plateformes de télémédecine et téléconsultation",
+        "Intelligence Artificielle appliquée au tri ou à l'optimisation des parcours",
+        "Objets connectés grand public (bien-être) sans marquage CE médical strict"
+      ],
+      "exclus": "Développement de médicaments, fabrication de matériel chirurgical lourd."
+    },
+    "Medtech": {
+      "definition": "Entreprises développant des dispositifs médicaux, des équipements matériels ou des outils de diagnostic physique.",
+      "inclus": [
+        "Robots chirurgicaux et d'assistance",
+        "Implants, prothèses et orthèses connectés ou non",
+        "Imagerie médicale (scanners, IRM - le matériel)",
+        "Dispositifs de diagnostic in vitro (DIV)",
+        "Matériel médical connecté (IoT médical avec marquage CE)"
+      ],
+      "exclus": "Applications purement logicielles sans composante matérielle propriétaire."
+    },
+    "Biotech": {
+      "definition": "Entreprises utilisant des processus biologiques ou chimiques pour développer des produits de santé, principalement thérapeutiques.",
+      "inclus": [
+        "Développement de nouveaux médicaments (Drug Discovery)",
+        "Thérapies géniques et cellulaires",
+        "Vaccins",
+        "Biomarqueurs biologiques",
+        "Synthèse d'ADN"
+      ],
+      "exclus": "Logiciels de gestion de laboratoire (qui sont de la Santé digitale)."
+    }
+  }
+}
+
 Voici le format JSON attendu :
 {
     "Nom_start-up": "String",
