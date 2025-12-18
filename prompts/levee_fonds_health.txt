@@ -11,12 +11,13 @@ Ta tâche est de :
 8. Pour les Business Angels : ne pas les nommer individuellement, écrire simplement "Business angels" dans la liste.
 9. Pour Bpifrance : ne pas le mentionner si c'est de la dette ou de l'aide non dilutive.
 10. S'il y a la mention d'investisseurs historiques, ne pas écrire "Investisseurs historiques" dans l'output. Ne pas conserver cette mention.
-11. Concernant les tours, la mention "seed" correspond à "Amorçage". Ecris "Amorçage" dans ce cas.
-12. Certains fonds dépendent de Bpifrance. S'ils sont cités, il faut ajouter dans "Investisseurs" le nom du fonds suivi de "(Bpifrance)" entre parenthèse. (voir exemple 8). Voici les fonds de Bpifrance : "PSIM", "Large Venture", French Tech Seed", "Patient autonome".
-13. IMPORTANT : Pour le montant, ne retiens que le montant en Equity si précisé (ex: Juisci).
-14. IMPORTANT : Si une URL ou un lien source est mentionné dans l'article (ex: "Source:", "Lien:", ou une URL complète), extrait-le et place-le dans le champ "Lien". Si aucune URL n'est trouvée dans le texte, mets null.
+11. S'il y a la mentation de "Family office", écris "Family offices" dans "Investisseurs", pas "Business angels" (voir exemple 10)
+12. Concernant les tours, la mention "seed" correspond à "Amorçage". Ecris "Amorçage" dans ce cas.
+13. Certains fonds dépendent de Bpifrance. S'ils sont cités, il faut ajouter dans "Investisseurs" le nom du fonds suivi de "(Bpifrance)" entre parenthèse. (voir exemples 8 et 9). Voici les fonds de Bpifrance : "Fonds PSIM", "Fonds Large Venture", "Fonds French Tech Seed", "Fonds Patient autonome", "Fonds Biothérapies Innovantes et Maladies Rares", "Fonds InnoBio2".
+14. IMPORTANT : Pour le montant, ne retiens que le montant en Equity si précisé (ex: Juisci).
+15. IMPORTANT : Si une URL ou un lien source est mentionné dans l'article (ex: "Source:", "Lien:", ou une URL complète), extrait-le et place-le dans le champ "Lien". Si aucune URL n'est trouvée dans le texte, mets null.
 
-15. Pour définir la catégorie "Type", choisis strictement entre "Santé digitale", "Medtech", "Biotech" ou "Autre" : 
+16. Pour définir la catégorie "Type", choisis strictement entre "Santé digitale", "Medtech", "Biotech" ou "Autre" : 
 {
   "categories_definitions": {
     "Sante_digitale": {
@@ -187,6 +188,36 @@ Réponse JSON attendue:
     "Lien": "https://www.mind.eu.com/health/article/lattice-medical-leve-43-me/",
     "Tour": "Série B",
     "Investisseurs": ["Fonds SPI (Bpifrance)", "Blast.Club", "Sprim", "Tidjee", "EIC Fund", "Captech Santé", "Nord France Amorçage", "FIRA Nord Est"]
+}
+
+Exemple 9:
+Article: Step Pharma lève 38 M€. La biotech française Step Pharma a annoncé le 15 octobre avoir finalisé une levée de fonds de série C à hauteur de 38 M€. Ce tour de table a été mené par V-Bio Ventures (nouvel investisseur), avec à ses côtés le fonds Kurma Partners, cofondateur de la société, et des investisseurs existants Pontifax, Bpifrance (Fonds Biothérapies Innovantes et Maladies Rares et Fonds InnoBio2), Hadean Ventures, Sunstone Life Science Ventures et Inserm Transfert Initiative. Ce financement vise à poursuivre le développement clinique en phase 1 de son principal actif, le dencatistat, un inhibiteur de la CTPS1 pour le traitement des cancers et des troubles sanguins, précise la biotech dans un communiqué. À retenir : Step Pharma a été créée en 2014 par Kurma Partners, l’Institut Imagine et Sygnature Discovery. La société développe des thérapies ciblées en oncologie. Kurma Partners a lancé son propre start-up studio Argobio, pour bâtir un portefeuille de biotech, parmi lesquelles figure Elkedonia, qui a levé 11,25 M€ en juin dernier.
+Lien: https://www.mind.eu.com/health/article/step-pharma-leve-38-me/
+
+Réponse JSON attendue:
+{
+    "Nom_start-up": "Step Pharma",
+    "Type": "Biotech",
+    "Montant": 38,
+    "Date_levée": "15/10/2025",
+    "Lien": "https://www.mind.eu.com/health/article/step-pharma-leve-38-me/",
+    "Tour": "Série C",
+    "Investisseurs": ["V-Bio Ventures", "Kurma Partners", "Pontifax", "Hadean Ventures", "Sunstone Life Science Ventures", "Inserm Transfert Initiative", "Fonds Biothérapies Innovantes et Maladies Rares (Bpifrance)", "Fonds InnoBio2 (Bpifrance)"]
+}
+
+Exemple 10:
+Article: EVerZom boucle une levée de 10 M€. La biotech EVerZom a annoncé le 14 octobre une levée de 10 M€ pour développer des biothérapies dans les maladies inflammatoires. Cette levée de fonds est menée auprès de Capital Grand Est, de l’European Innovation Council (EIC) Fund, de Sorbonne Venture by Audacia et Aloe Private Equity, de Paris Business Angels, de la plateforme Capital Cell et de family offices. Avec ces fonds, la biotech française souhaite lancer l’étude clinique de son candidat médicament EVerGel en 2026, développé pour le traitement des fistules périanales complexes dans la maladie de Crohn. Il n’existe pas de solution thérapeutique depuis le retrait d’Alofisel du marché européen en décembre 2024, précise la biotech dans son communiqué. Spécialisée dans les thérapies à base d’exosomes pour des applications en médecine régénérative, EVerZom souhaite également étendre ses indications en hépatologie et en dermatologie. À retenir : Lauréate de l’AAP Innovations en biothérapies et bioproduction, EverZom a obtenu un financement de 3 M€ de Bpifrance en juin 2025.
+Lien: https://www.mind.eu.com/health/article/everzom-boucle-une-levee-de-10-me/
+
+Réponse JSON attendue:
+{
+    "Nom_start-up": "EVerZom",
+    "Type": "Biotech",
+    "Montant": 10,
+    "Date_levée": "14/10/2025",
+    "Lien": "https://www.mind.eu.com/health/article/everzom-boucle-une-levee-de-10-me/",
+    "Tour": null,
+    "Investisseurs": ["Capital Grand Est", "EIC Fund", "Sorbonne Venture by Audacia", "Aloe Private Equity", "Paris Business Angels", "Capital Cell", "Family Offices"]
 }
 
 Maintenant, traite l'article fourni et renvoie UNIQUEMENT le JSON sans aucun texte supplémentaire.
