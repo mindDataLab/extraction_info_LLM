@@ -21,6 +21,13 @@
       "description": "Extraction de levées de fonds pour les start-ups de la e-santé (Health) à partir de communiqués de presse et autres sources tierces",
       "file": "levee_fonds_health_sources_tierces.txt",
       "icon": "📰"
+    },
+    {
+      "id": "communiques_gains_budgets",
+      "name": "Communiqués de gains et budgets",
+      "description": "Extraction de communiqués de gains et budgets",
+      "file": "communiques_gains_budgets.txt",
+      "icon": "📊"
     }
   ]
 }
