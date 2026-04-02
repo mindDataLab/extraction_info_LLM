@@ -134,3 +134,435 @@ Réponse JSON attendue:
     "Renouvellement ou gain ?": "Gain",
     "Référent au sein de l'agence": ""
 }
+
+
+Exemple 3:
+Communiqué: "WPP Media désignée agence média européenne de Reckitt
+Paris, le 6 novembre 2025 – WPP Media annonce aujourd'hui avoir été désignée par
+Reckitt pour gérer sa planification et son achat média sur 21 marchés européens.
+WPP Media développera la stratégie et activera les campagnes pour le portefeuille de
+marques phares de santé et d'hygiène de confiance de Reckitt – utilisées quotidiennement
+par des millions de personnes pour leur qualité et leur science supérieure – incluant Durex,
+Nurofen, Strepsils, Gaviscon, Veet, Dettol, Finish et Vanish.
+WPP Media soutiendra la stratégie de croissance de Reckitt, grâce à la plateforme
+marketing WPP Open. Cette plateforme permet une collaboration entre diverses sources de
+données, au-delà des identifiants traditionnels, des données issues des plateformes dites
+« walled garden » et des réseaux de retail media, sans jamais avoir besoin de déplacer ou
+de partager ces données.
+Cindy Rose, CEO de WPP, déclare : « Les marques de Reckitt font partie du quotidien de
+centaines de millions de personnes à travers le monde. Nous sommes fiers de nous
+associer à une entreprise sur laquelle tant de gens comptent et à laquelle ils font confiance
+pour assurer la sécurité et la santé de leurs foyers, de leurs familles et de leurs proches.
+Nous sommes ravis de collaborer avec Reckitt pour réécrire les règles du marketing à l'ère
+de l'IA et déployer l'ensemble des capacités de WPP pour Reckitt à travers l'Europe. »
+WPP Media gérera les activités média de Reckitt grâce à un modèle intégré combinant
+l'expertise des marchés locaux et une gouvernance centralisée, rendue possible par WPP
+Open, afin d'assurer cohérence, envergure et efficacité sur l'ensemble des marchés.
+Alexandra Chabanne, CEO de WPP Media et Country Manager de WPP France, ajoute :
+« Ce partenariat européen est une formidable reconnaissance de notre expertise et de notre
+capacité à innover. Je suis particulièrement fière de voir nos équipes accompagner des
+marques aussi emblématiques que celles de Reckitt. C'est une opportunité unique de
+démontrer comment WPP Open et nos talents peuvent transformer le marketing à l'échelle
+européenne, y compris sur le marché français, en générant une croissance significative et
+durable. »
+Ryan Dullea, Chief Category Growth Officer chez Reckitt, commente : « C'est une étape
+majeure pour simplifier notre approche marketing et garantir que notre stratégie et notre
+exécution média fonctionnent de concert. Cette décision reflète notre ambition de renforcer
+la cohérence, l'efficacité et l'envergure sur tous les marchés, nous permettant ainsi de
+proposer des campagnes plus unifiées et axées sur les données qui accéléreront la
+croissance de nos marques. Nous sommes impatients d'entamer ce nouveau chapitre avec
+WPP et de bâtir un partenariat solide et collaboratif qui donnera vie à la raison d'être de
+Reckitt. »
+
+Ce partenariat prendra effet le 1er janvier 2026."
+
+Réponse JSON attendue: 
+{
+    "Date de l'annonce": "6 novembre 2025",
+    "Appel d'offre en cours ou budget attribué ?": "attribué",
+    "Source de l'annonce (communiqué, média, BOAMP...)": "communiqué",
+    "Lien URL vers l'annonce": "",
+    "Nom de l'agence": "WPP Media",
+    "Groupe de l'agence": "WPP Media",
+    "Nom de l'agence précédente": "France : iProspect",
+    "Groupe de l'agence précédente": "Dentsu",
+    "Nom de l'annonceur": "Reckitt",
+    "Activité de l'annonceur": "Produits de grande consommation",
+    "Groupe de l'annonceur": "",
+    "Montant du budget": 0,
+    "Périmètre de la mission": "Stratégie média et activation des campagnes online et offline, pour le portefeuille de marques de santé et d'hygiène",
+    "Périmètre géographique du budget": "21 pays européens",
+    "Pitch global, local ou régional ?": "Régional",
+    "Objectifs": "Renforcer la cohérence sur tous les marchés, proposer des campagnes plus unifiées et axées sur les données",
+    "Renouvellement ou gain ?": "Gain",
+    "Référent au sein de l'agence": ""
+}
+
+
+Exemple 4:
+Communiqué: "Hankook France confie sa stratégie media
+à CoSpirit
+À l’issue d’un appel d’offres, Hankook, l’un des principaux manufacturiers
+pneumatiques mondiaux et acteur de référence auprès des constructeurs automobiles,
+choisit CoSpirit pour piloter sa stratégie media et l’achat d’espaces publicitaires sur le
+marché français, de son activité tourisme. Cette collaboration marque une nouvelle
+étape dans l’ambition de la marque, engagée dans l’innovation technologique et la
+transition vers la mobilité électrique.
+Accélérer la présence de Hankook sur le marché français
+Dès la fin d’année 2025, les premières prises de parole verront le jour en TV et en streaming,
+avec un dispositif construit pour accélérer l’émergence de la marque auprès du grand public
+comme des conducteurs engagés dans une mobilité plus durable.
+La campagne mettra en lumière la dernière innovation produit d’Hankook : « iON », une
+gamme de pneus spécifiquement conçue pour les véhicules électriques et hybrides, alliant
+performance, autonomie, adhérence et confort acoustique.
+Une stratégie media au service d’une performance durable
+Cette collaboration s’appuie sur un objectif commun : adopter une approche media agile,
+performante et entièrement alignée avec les nouveaux usages de mobilité et les attentes
+environnementales.
+
+« Chez CoSpirit, nous sommes animés par l’envie d’accompagner des
+marques ambitieuses, qui ont pris la mesure de la crise climatique qui
+nous impacte. Le partenariat avec Hankook France s’inscrit pleinement
+dans cette dynamique : une collaboration où innovation produit et
+exigence média se rencontrent pour créer de la valeur durable. »
+Delphine Médeci, Directrice Générale Adjointe de CoSpirit Media
+« Ce partenariat avec CoSpirit constitue une étape clé pour renforcer la
+visibilité de Hankook en France. La confiance que nous leur accordons
+repose sur leur compréhension fine de nos objectifs de marque et des
+enjeux autour de la mobilité de demain. CoSpirit a su proposer une
+approche media agile et mettre en place des dispositifs efficaces, capable
+d’accompagner nos innovations, en s’adressant notamment aux
+audiences les plus pertinentes, engagées dans la transition vers une
+mobilité électrique. »
+Justine Vautrin, Responsable communication et marketing d’Hankook
+France"
+
+Réponse JSON attendue: 
+{
+    "Date de l'annonce": "18 décembre 2025",
+    "Appel d'offre en cours ou budget attribué ?": "attribué",
+    "Source de l'annonce (communiqué, média, BOAMP...)": "communiqué",
+    "Lien URL vers l'annonce": "",
+    "Nom de l'agence": "CoSpirit",
+    "Groupe de l'agence": "CoSpirit",
+    "Nom de l'agence précédente": "OMD",
+    "Groupe de l'agence précédente": "Omnicom Media",
+    "Nom de l'annonceur": "Hankook France",
+    "Activité de l'annonceur": "Equipementier automobile",
+    "Groupe de l'annonceur": "Hankook Tire & Technology",
+    "Montant du budget": 0,
+    "Périmètre de la mission": "Stratégie media et achat d’espaces (TV, streaming) pour l'activité tourisme.",
+    "Périmètre géographique du budget": "France",
+    "Pitch global, local ou régional ?": "Local",
+    "Objectifs": "Renforcer la visibilité de la marque auprès du grand public et des conducteurs engagés dans une mobilité durable (pneus conçus pour les véhicules électriques et hybrides).",
+    "Renouvellement ou gain ?": "Gain",
+    "Référent au sein de l'agence": ""
+}
+
+
+Exemple 5:
+Communiqué: "HERTA TRANCHE POUR HAVAS MEDIA FRANCE
+Havas Media France , première agence d’Havas Media Network, renforce son portefeuille
+client dans le secteur de l’alimentaire. A l’issue d’une compétition organisée par VMG
+C onsulting réunissant quatre acteurs majeurs de son marché , Havas Media France remporte
+le conseil et la gestion de l’ensemble des achats m edia d’Herta , marque la plus présente dans
+le réfrigérateur des F rançais . Cette confiance accordée confirme l’expertise d’Havas Media
+France dans les stratégies de visibilité de la marque .
+
+Herta commercialis e des produits de charcuterie et des produits traiteurs en libre -service. Avec une pénétration
+dans près de 9 frigos sur 10 , Herta s’impose comme la marque la plus préférée d es Français.
+Dans le cadre de son partenariat avec Herta, Havas Media France accompagnera la marque dans la définition et
+la mise en œuvre de sa réflexion stratégique afin de renforcer son positionnement et accélérer son
+développement. L’agence aura ainsi la charge du conseil stratégique, de la planification et des achats média
+online et offline, tout en imaginant des activations Meaningful au service de la marque, de son image et de la
+réussite du lancement de ses innovations produits.
+Dorothée TESTARD , Directrice Générale Adjointe d’Havas Media France
+« Cette nouvelle collaboration est le fruit d’une réflexion collective au service d’Herta . L’exhaustivité de la
+réponse sur une cible à valeur, notre méthodologie, nos outils collaboratifs innovants et notre expertise ont
+établi la base de notre relation avec Herta . Nous sommes fiers et ravis de travailler à leurs côtés et de partager
+des valeurs communes. » "
+
+Réponse JSON attendue: 
+{
+    "Date de l'annonce": "5 janvier 2026",
+    "Appel d'offre en cours ou budget attribué ?": "attribué",
+    "Source de l'annonce (communiqué, média, BOAMP...)": "communiqué",
+    "Lien URL vers l'annonce": "",
+    "Nom de l'agence": "Havas Media",
+    "Groupe de l'agence": "Havas",
+    "Nom de l'agence précédente": "",
+    "Groupe de l'agence précédente": "",
+    "Nom de l'annonceur": "Herta",
+    "Activité de l'annonceur": "Alimentaire",
+    "Groupe de l'annonceur": "Casa Tarradellas",
+    "Montant du budget": 0,
+    "Périmètre de la mission": "Conseil stratégique, planification et achats médias online et offline",
+    "Périmètre géographique du budget": "France",
+    "Pitch global, local ou régional ?": "Local",
+    "Objectifs": "",
+    "Renouvellement ou gain ?": "Gain",
+    "Référent au sein de l'agence": ""
+}
+
+
+Exemple 6:
+Communiqué: "ØCONNECTION REMPORTE L’APPEL D’OFFRES MEDIA DES LABORATOIRES URIACH FRANCE ET
+
+RENFORCE SON EXPERTISE DANS L’UNIVERS SANTÉ-BIEN-ÊTRE
+
+ØCONNECTION annonce avoir remporté l’appel d’offres media des Laboratoires URIACH France, acteur
+majeur des compléments alimentaires et de la nutrition santé, à l’issue d’un appel d’offres media réunissant
+plusieurs agences. ØCONNECTION accompagnera le groupe dans la définition et le déploiement de sa
+stratégie media globale.
+Ce partenariat porte notamment sur l’accompagnement media de PEDIAKID, ISN, OLIOSEPTIL, STC
+NUTRITION, FISIOCREM et VITAMIN 22, avec des enjeux différenciés de notoriété, de considération et de
+performance selon les cibles et les circuits de distribution.
+ØCONNECTION interviendra sur l’ensemble de la chaîne de valeur media : stratégie, conseil, activation et
+optimisation des investissements, avec pour objectif d’accroître la visibilité des marques et de maximiser
+l’efficacité des dispositifs dans un marché santé-bien-être très concurrentiel.
+« La confiance accordée par les Laboratoires URIACH France illustre notre capacité à accompagner des
+marques exigeantes dans des environnements complexes, en conciliant performance, responsabilité et
+création de valeur durable. »
+
+Arnaud Baudry d’Asson
+CEO de l’agence ØCONNECTION
+
+La collaboration a débuté dès le 10 janvier avec un premier dispositif d’envergure : le sponsoring de la Star
+Academy pour la marque PEDIAKID, leader de la santé naturelle pour enfant en pharmacie. Ce dispositif
+marque une volonté commune de s’inscrire durablement dans un territoire à forte affinité familiale.
+Ce gain confirme le développement du pôle media grand public de ØCONNECTION et renforce son
+positionnement d’expert dans les univers santé, bien-être et nutrition, en combinant médias traditionnels et
+leviers digitaux au service de la performance business."
+
+Réponse JSON attendue: 
+{
+    "Date de l'annonce": "19 janvier 2026",
+    "Appel d'offre en cours ou budget attribué ?": "attribué",
+    "Source de l'annonce (communiqué, média, BOAMP...)": "communiqué",
+    "Lien URL vers l'annonce": "",
+    "Nom de l'agence": "OConnection",
+    "Groupe de l'agence": "",
+    "Nom de l'agence précédente": "",
+    "Groupe de l'agence précédente": "",
+    "Nom de l'annonceur": "Uriach France",
+    "Activité de l'annonceur": "Santé",
+    "Groupe de l'annonceur": "",
+    "Montant du budget": 0,
+    "Périmètre de la mission": "Stratégie et achat média",
+    "Périmètre géographique du budget": "France",
+    "Pitch global, local ou régional ?": "Local",
+    "Objectifs": "Accroître la visibilité des marques (Pediakid, Ediakid, ISN, Olioseptil, STC Nutrition, Fisiocrem, Vitamin 22), et maximiser l’efficacité des dispositifs.",
+    "Renouvellement ou gain ?": "",
+    "Référent au sein de l'agence": ""
+}
+
+
+Exemple 7:
+Communiqué: "CoSpirit remporte le budget média France
+de PortAventura World
+
+À l’issue d’un appel d’offres, PortAventura World confie à CoSpirit
+l’accompagnement de sa stratégie média sur le marché français, premier marché
+international du parc d’attraction espagnol. L’agence est chargée de définir la
+stratégie média globale et d’orchestrer son déploiement à 360°.
+Une approche média ancrée dans les Territoires
+Pour accompagner PortAventura World, CoSpirit s’est appuyé sur son approche propriétaire
+“La France de” [PortAventura]. Nourrie par l’expertise mesure & data de l’agence, ainsi que
+les outils développés au sein de son Lab d’innovation, cette approche a permis de construire
+une stratégie media sur-mesure, ajustée aux comportements des visiteurs français sur les
+territoires, avec une lecture précise des zones prioritaires et des périodes clés.
+Renforcer la notoriété et la performance
+La stratégie vise à consolider la présence de PortAventura World auprès des familles
+françaises tout en soutenant la performance commerciale du parc. CoSpirit assurera le
+pilotage stratégique du digital paid media, dont l’exécution restera opérée en interne, afin de
+garantir une cohérence globale entre les actions de notoriété et les leviers de conversion.
+L’accent est mis sur l’efficacité media, avec un dispositif capable d’adresser à la fois les enjeux
+d’image et les objectifs business.
+
+« La France est notre premier marché international, et l’expertise
+approfondie de CoSpirit dans le secteur du tourisme — associée à leur
+capacité à transformer des insights territoriaux en stratégies média
+réellement guidées par la donnée — en fait un partenaire solide et de
+confiance pour accompagner notre croissance. Cette collaboration
+renforce notre ambition d’engager plus efficacement le public français tout
+au long de l’année et de déployer une approche média à la fois percutante
+et pleinement alignée avec nos objectifs commerciaux. »
+Raquel Florenza, Directrice Marketing international & E-Commerce de
+PortAventura World
+
+Contact Presse - Agence Constance - Antoine Reeb - 07 57 68 30 60 - antoine.reeb@agence-constance.fr
+« Je suis extrêmement fière de cette nouvelle collaboration. L’expertise de
+CoSpirit dans le secteur du Tourisme (Vulcania, Sandaya, Volotea...) a
+été un véritable atout pour comprendre les enjeux de PortAventura, où
+Territorialité, Temporalité et Offres constituent une matrice complexe.
+Notre expertise Mesure & Data, incarnée à travers nos outils propriétaires
+développés au sein de notre Lab d’innovation, a été décisive dans notre
+capacité à convaincre les équipes Marketing du Parc. »
+Delphine Médeci, Directrice Générale Adjointe de CoSpirit"
+
+Réponse JSON attendue: 
+{
+    "Date de l'annonce": "9 février 2026",
+    "Appel d'offre en cours ou budget attribué ?": "attribué",
+    "Source de l'annonce (communiqué, média, BOAMP...)": "communiqué",
+    "Lien URL vers l'annonce": "",
+    "Nom de l'agence": "CoSpirit",
+    "Groupe de l'agence": "CoSpirit",
+    "Nom de l'agence précédente": "Big success",
+    "Groupe de l'agence précédente": "",
+    "Nom de l'annonceur": "PortAventura World",
+    "Activité de l'annonceur": "Tourisme",
+    "Groupe de l'annonceur": "",
+    "Montant du budget": 0,
+    "Périmètre de la mission": "Stratégie média et pilotage stratégique du digital paid media, dont l'exécution est opérée en interne.",
+    "Périmètre géographique du budget": "France",
+    "Pitch global, local ou régional ?": "Local",
+    "Objectifs": "Consolider la présence du parc auprès des familles françaises, et soutenir sa performance commerciale.",
+    "Renouvellement ou gain ?": "Gain",
+    "Référent au sein de l'agence": ""
+}
+
+
+Exemple 8:
+Communiqué: "ØCONNECTION REMPORTE L’APPEL D’OFFRES MEDIA ATLANTEM POUR LA MARQUE SOLABAIE
+À l’issue d’un appel d’offres média, ATLANTEM, acteur majeur de menuiseries et fermetures en France,
+confie à ØCONNECTION la gestion de ses campagnes pour sa marque SOLABAIE.
+La collaboration a débuté en janvier 2026 et porte sur l’ensemble des dispositifs média de la marque.
+ØCONNECTION accompagne SOLABAIE dans la définition, le pilotage et l’optimisation de sa stratégie
+média, avec pour objectif de renforcer sa visibilité, soutenir la performance commerciale de son réseau et
+accompagner la croissance de la marque sur l’ensemble de ses canaux.
+Cette nouvelle collaboration s’inscrit dans la volonté d’ATLANTEM de s’appuyer sur un partenaire expert,
+capable d’allier vision stratégique, performance média et compréhension fine des enjeux du secteur de
+l’habitat.
+
+« Nous sommes très fiers de la confiance accordée par ATLANTEM et SOLABAIE à ØCONNECTION. Ce
+partenariat illustre notre capacité à construire des stratégies média utiles et performantes, au service de la
+visibilité des marques et de la performance des réseaux, dans un secteur de l’habitat en forte évolution.
+Nous mettrons toute notre expertise stratégique et opérationnelle au service de la croissance de
+SOLABAIE sur l’ensemble de ses points de contact. »
+
+Arnaud Baudry d’Asson
+CEO de l’agence ØCONNECTION"
+
+Réponse JSON attendue: 
+{
+    "Date de l'annonce": "11 février 2026",
+    "Appel d'offre en cours ou budget attribué ?": "attribué",
+    "Source de l'annonce (communiqué, média, BOAMP...)": "communiqué",
+    "Lien URL vers l'annonce": "",
+    "Nom de l'agence": "OConnection",
+    "Groupe de l'agence": "",
+    "Nom de l'agence précédente": "",
+    "Groupe de l'agence précédente": "",
+    "Nom de l'annonceur": "Atlantem",
+    "Activité de l'annonceur": "Industrie",
+    "Groupe de l'annonceur": "",
+    "Montant du budget": 0,
+    "Périmètre de la mission": "Stratégie et achat média pour la marque Solabaie, à partir de janvier 2026.",
+    "Périmètre géographique du budget": "France",
+    "Pitch global, local ou régional ?": "Local",
+    "Objectifs": "Renforcer sa visibilité, soutenir la performance commerciale de son réseau et accompagner la croissance de la marque sur l’ensemble de ses canaux.",
+    "Renouvellement ou gain ?": "Gain",
+    "Référent au sein de l'agence": ""
+}
+
+
+Exemple 9:
+Communiqué: "ØCONNECTION REMPORTE L’APPEL D’OFFRE MÉDIA ET REFERENCEMENT PAYANT DE L’Apec
+
+ØCONNECTION devient la nouvelle agence media de l’Apec (Association pour l’emploi des cadres) à l’issue de l’appel
+d’offres portant sur le conseil, la stratégie, l’achat d’espace et le pilotage de la performance des campagnes. En
+2025, l’Apec a investi plus de 20 millions d’euros bruts selon Kantar media.
+Dans le cadre de ce partenariat, ØCONNECTION accompagnera l’Apec sur l’ensemble de ses enjeux media (off line,
+on line, référencement payant, influence et brand content) afin d’optimiser la performance de ses campagnes et de
+renforcer la visibilité de ses dispositifs auprès de ses cibles prioritaires : les cadres en poste, les jeunes
+diplômés (Bac + 3 et +), les entreprises et en particulier les publics plus fragiles face à l’emploi.
+Cette collaboration s’inscrit dans une volonté partagée d’innovation et d’efficacité, s’appuyant sur l’expertise
+d’ØCONNECTION en matière de stratégie média, data et performance mais également de partenariats media, de
+création de contenus et de stratégies d’influence.
+Avec ce nouveau gain, ØCONNECTION poursuit sa très forte dynamique en 2026 avec 18 nouveaux budgets media
+depuis le début de l’année et 21 gains sur ses autres expertises (RP Influence, Event, Sport et Culture).
+« Nous sommes très fiers de la confiance accordée par l’Apec. Ce gain majeur, remporté face à des très nombreuses
+agences, marque une nouvelle étape pour ØCONNECTION et confirme la pertinence de notre approche stratégique et
+opérationnelle au service des acteurs d’intérêt général. »
+
+Arnaud Baudry d’Asson
+CEO de l’agence ØCONNECTION"
+
+Réponse JSON attendue: 
+{
+    "Date de l'annonce": "16 février 2026",
+    "Appel d'offre en cours ou budget attribué ?": "attribué",
+    "Source de l'annonce (communiqué, média, BOAMP...)": "communiqué",
+    "Lien URL vers l'annonce": "",
+    "Nom de l'agence": "OConnection",
+    "Groupe de l'agence": "",
+    "Nom de l'agence précédente": "Repeat",
+    "Groupe de l'agence précédente": "Biggie Group",
+    "Nom de l'annonceur": "Apec",
+    "Activité de l'annonceur": "Emploi",
+    "Groupe de l'annonceur": "",
+    "Montant du budget": 0,
+    "Périmètre de la mission": "Stratégie média et achat d''espaces (SEA, online, offline, influence, brand content).",
+    "Périmètre géographique du budget": "France",
+    "Pitch global, local ou régional ?": "Local",
+    "Objectifs": "Renforcer la visibilité de ses dispositifs auprès de ses cibles prioritaires : cadres en poste, jeunes diplômés Bac+3 et plus, entreprises, publics fragiles.",
+    "Renouvellement ou gain ?": "Gain",
+    "Référent au sein de l'agence": ""
+}
+
+
+Exemple 10:
+Communiqué: "Re-Mind PHD accompagne Gozoki pour sa première
+campagne publicitaire nationale
+Paris, le 9 janvier 2025 – À l’occasion de sa première prise de parole publicitaire,
+Gozoki, le champion des plats cuisinés de terroir haut de gamme, a choisi Re-Mind
+PHD, agence média d’Omnicom Media, pour orchestrer sa stratégie média et
+l’ensemble de ses achats online et offline à Re-Mind PHD. Dans le cadre de cet
+accompagnement global, Re-Mind PHD déploiera la première campagne
+audiovisuelle nationale du groupe, pour asseoir sa notoriété.
+Acteur de référence sur le segment des plats cuisinés premium, Gozoki s’est imposé comme
+un leader grâce à son exigence produit, son ancrage dans les territoires et la valorisation
+du savoir-faire culinaire français.
+Une première campagne nationale différenciante
+Cette collaboration marque une étape clé dans le développement de Gozoki. Re-Mind PHD
+accompagne la marque, dans le cadre de sa première campagne nationale, avec un
+dispositif audiovisuel d’envergure conçu pour maximiser l’impact et la mémorisation
+Le dispositif imaginé par Re-Mind PHD repose un spot publicitaire de 30 secondes,
+volontairement décalé, diffusé en télévision du 8 janvier au 16 février, et en BVOD sur TF1+,
+France TV et M6+.
+L’objectif de cette prise de parole est de développer la notoriété et la considération de
+la marque Gozoki, en mettant en lumière le produit emblématique de la Maison Briau : la
+brandade de morue, reconnue comme le plat préparé préféré des Français. Cette
+campagne est pensée pour installer durablement la marque dans l’esprit du grand public
+et affirmer son positionnement sur un marché très concurrentiel.
+À travers ce partenariat, Re-Mind PHD confirme sa capacité à accompagner des marques à
+fort potentiel dans des moments structurants de leur trajectoire.
+« Accompagner Gozoki dans sa toute première campagne audiovisuelle nationale est une
+grande fierté pour nos équipes. Cette prise de parole marque une étape structurante pour
+la marque, et illustre parfaitement notre capacité à construire des dispositifs puissants et
+différenciants. Avec cette campagne, nous avons l’ambition d’installer durablement la
+marque dans l’esprit des consommateurs. » déclarent Marie Costeux et Geoffrey Hayat,
+dirigeants de Re-Mind PHD. "
+
+Réponse JSON attendue: 
+{
+    "Date de l'annonce": "9 janvier 2026",
+    "Appel d'offre en cours ou budget attribué ?": "attribué",
+    "Source de l'annonce (communiqué, média, BOAMP...)": "communiqué",
+    "Lien URL vers l'annonce": "",
+    "Nom de l'agence": "Re-mind PHD",
+    "Groupe de l'agence": "Omnicom Media",
+    "Nom de l'agence précédente": "",
+    "Groupe de l'agence précédente": "",
+    "Nom de l'annonceur": "Gozoki",
+    "Activité de l'annonceur": "Alimentaire",
+    "Groupe de l'annonceur": "",
+    "Montant du budget": 0,
+    "Périmètre de la mission": "Stratégie et achats médias online et offline",
+    "Périmètre géographique du budget": "France",
+    "Pitch global, local ou régional ?": "Local",
+    "Objectifs": "Développer la notoriété et la considération de la marque Maison Briau",
+    "Renouvellement ou gain ?": "Gain",
+    "Référent au sein de l'agence": ""
+}
