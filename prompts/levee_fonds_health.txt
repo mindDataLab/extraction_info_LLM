@@ -8,14 +8,16 @@ Ta tâche est de :
 5. Si certaines informations sont manquantes, utiliser la valeur null.
 6. Ne pas inventer d'informations.
 7. Fournir des réponses uniquement en français.
-8. Pour les Business Angels : ne pas les nommer individuellement, écrire simplement "Business angels" dans la liste.
-9. Pour Bpifrance : ne pas le mentionner si c'est de la dette ou de l'aide non dilutive.
-10. S'il y a la mention d'investisseurs historiques, ne pas écrire "Investisseurs historiques" dans l'output. Ne pas conserver cette mention.
-11. S'il y a la mentation de "Family office", écris "Family offices" dans "Investisseurs", pas "Business angels" (voir exemple 10)
-12. Concernant les tours, la mention "seed" correspond à "Amorçage". Ecris "Amorçage" dans ce cas.
-13. Certains fonds dépendent de Bpifrance. S'ils sont cités, il faut ajouter dans "Investisseurs" le nom du fonds suivi de "(Bpifrance)" entre parenthèse. (voir exemples 8 et 9). Voici les fonds de Bpifrance : "Fonds PSIM", "Fonds Large Venture", "Fonds French Tech Seed", "Fonds Patient autonome", "Fonds Biothérapies Innovantes et Maladies Rares", "Fonds InnoBio2".
-14. IMPORTANT : Pour le montant, ne retiens que le montant en Equity si précisé (ex: Juisci).
-15. IMPORTANT : Si une URL ou un lien source est mentionné dans l'article (ex: "Source:", "Lien:", ou une URL complète), extrait-le et place-le dans le champ "Lien". Si aucune URL n'est trouvée dans le texte, mets null.
+8. Montant : ne retiens que le montant en Equity si précisé (ex: Juisci).
+9. Montant : Si le montant est donné en dollars dans le texte, précise $ dans l'output. 
+10. Montant : Si le montant est séparé par un point dans le texte, remplace le point par une virgule dans l'output. Exemple : 10.9 doit être remplacé par 10,9.
+11. Investisseurs : ne pas nommer les investisseurs individuels, désignés par un prénom et un nom ("Céline Lazorthes", "Jean-Charles Samuelian", "Arthur Mensch", "Félix Blossier", "Quentin de Metz", etc.), écrire simplement "Business angels" dans la liste.
+12. Investisseurs : ne pas mentionner Bpifrance s'il a participé en dette ou via de l'aide non dilutive.
+13. Investisseurs : Certains fonds dépendent de Bpifrance. S'ils sont cités, il faut ajouter dans "Investisseurs" le nom du fonds suivi de "(Bpifrance)" entre parenthèse. (voir exemples 8 et 9). Voici les fonds de Bpifrance : "Fonds PSIM", "Fonds Large Venture", "Fonds French Tech Seed", "Fonds Patient autonome", "Fonds Biothérapies Innovantes et Maladies Rares", "Fonds InnoBio2".
+14. Investisseurs : s'il y a la mention d'investisseurs historiques, ne pas écrire "Investisseurs historiques" dans l'output. Ne pas conserver cette mention.
+15. Investisseurs : s'il y a la mentation de "Family office", écris "Family offices" dans "Investisseurs", pas "Business angels" (voir exemple 10)
+16. Tour : la mention "seed" correspond à "Amorçage". Ecris "Amorçage" dans ce cas.
+17. IMPORTANT : Si une URL ou un lien source est mentionné dans l'article (ex: "Source:", "Lien:", ou une URL complète), extrait-le et place-le dans le champ "Lien". Si aucune URL n'est trouvée dans le texte, mets null.
 
 16. Pour définir la catégorie "Type", choisis strictement entre "Santé digitale", "Medtech", "Biotech" ou "Autre" : 
 {
