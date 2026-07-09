@@ -1495,9 +1495,29 @@ else:
             from datetime import timedelta
 
             thirty_days_ago = datetime.now() - timedelta(days=30)
-            recent_extractions = [
-                ext for ext in extractions if datetime.strptime(ext["created_at"], "%Y-%m-%d %H:%M:%S") >= thirty_days_ago
-            ]
+
+            recent_extractions = []
+            for ext in extractions:
+                val = ext.get("created_at")
+                if val:
+                    # 1. Si c'est déjà un objet datetime
+                    if isinstance(val, datetime):
+                        # Si l'un a un fuseau horaire (tz) et pas l'autre, on les aligne
+                        val_naive = val.replace(tzinfo=None)
+                        thirty_days_naive = thirty_days_ago.replace(tzinfo=None)
+            
+                        if val_naive >= thirty_days_naive:
+                            recent_extractions.append(ext)
+                
+                    # 2. Si c'est du texte (str), on le convertit d'abord
+                    elif isinstance(val, str):
+                        try:
+                            # Adaptez le format "%Y-%m-%d" selon la forme de votre texte (ex: 2026-07-09)
+                            val_date = datetime.strptime(val[:10], "%Y-%m-%d")
+                            if val_date >= thirty_days_ago.replace(tzinfo=None):
+                                recent_extractions.append(ext)
+                        except ValueError:
+                            pass # Format de texte invalide, on ignore
 
             if recent_extractions:
                 # Compter par jour
