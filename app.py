@@ -1496,7 +1496,7 @@ else:
 
             thirty_days_ago = datetime.now() - timedelta(days=30)
             recent_extractions = [
-                ext for ext in extractions if ext["created_at"] >= thirty_days_ago
+                ext for ext in extractions if datetime.strptime(ext["created_at"], "%Y-%m-%d %H:%M:%S") >= thirty_days_ago
             ]
 
             if recent_extractions:
